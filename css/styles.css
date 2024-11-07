@@ -750,6 +750,7 @@ footer.footer__logo {
 .back-to-top__text {
   font-family: var(--font-family-brand);
   color: var(--color-text-primary);
+  user-select: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

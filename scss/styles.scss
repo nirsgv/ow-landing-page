@@ -370,5 +370,6 @@ footer.footer {
   &__text {
     font-family: var(--font-family-brand);
     color: var(--color-text-primary);
+    user-select: none; 
   }
 }
