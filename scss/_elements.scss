@@ -1,0 +1,112 @@
+@use "media-queries";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-neutral-0);
+  font-family: var(--font-family-default);
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+section {
+  max-width: 100%;
+  margin-inline: auto;
+  padding-inline: var(--space-500);
+  padding-bottom: var(--space-1200);
+  overflow: hidden;
+
+  &:not(.hero) {
+    padding-top: var(--space-1200);
+
+    @include media-queries.respond-desktop {
+      padding-top: var(--space-2400);
+    }
+  }
+
+  @include media-queries.respond-desktop {
+    max-width: 1396px;
+    padding-bottom: var(--space-2400);
+  }
+
+  &.success-stories {
+    @include media-queries.respond-desktop {
+      max-width: unset;
+    }
+  }
+
+  & > header {
+    text-align: center;
+    font-family: var(--font-family-brand);
+    margin-bottom: var(--space-600);
+
+    @include media-queries.respond-tablet {
+      margin-bottom: var(--space-1200);
+    }
+  }
+}
+
+footer {
+  background-color: var(--color-neutral-8);
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  font-size: var(--font-size-800);
+  line-height: var(--font-line-height-1000);
+  font-weight: var(--font-weight-bold);
+
+  @include media-queries.respond-tablet {
+    font-size: var(--font-size-1600);
+    line-height: var(--font-line-height-1800);
+  }
+
+  @include media-queries.respond-desktop {
+    font-size: var(--font-size-1600);
+    line-height: var(--font-line-height-1800);
+  }
+}
+
+h2 {
+  color: var(--color-text-pure);
+  font-size: var(--font-size-800);
+
+  @include media-queries.respond-desktop {
+    font-size: var(--font-size-1600);
+  }
+}
+
+h4 {
+  font-size: var(--font-size-450);
+  line-height: var(--font-line-height-700);
+  font-weight: var(--font-weight-medium);
+
+  @include media-queries.respond-tablet {
+    font-size: var(--font-size-550);
+    line-height: var(--font-line-height-800);
+  }
+
+  @include media-queries.respond-desktop {
+    font-size: var(--font-size-550);
+    line-height: var(--font-line-height-800);
+  }
+}
+
+.should-animate-entrance {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.should-animate-entrance--visible {
+  opacity: 1;
+  transform: translateY(0);
+}

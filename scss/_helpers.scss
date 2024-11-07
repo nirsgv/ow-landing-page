@@ -1,0 +1,12 @@
+.default-font {
+  font-family: var(--font-family-default);
+}
+
+.primary-font {
+  font-family: var(--font-family-default);
+}
+
+@mixin padding-vertical($value) {
+  padding-top: $value;
+  padding-bottom: $value;
+}

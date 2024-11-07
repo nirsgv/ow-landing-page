@@ -1,0 +1,126 @@
+:root {
+  //Core Typography brand fonts
+  --font-family-brand: "Montserrat", sans-serif;
+  --font-family-default: "Lato", sans-serif;
+
+  // Font weight
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  // Line height
+  --font-line-height-350: 14px; /* 31.818% */
+  --font-line-height-400: 16px; /* 36.364% */
+  --font-line-height-500: 20px; /* 45.455% */
+  --font-line-height-600: 24px; /* 54.545% */
+  --font-line-height-700: 28px; /* 63.636% */
+  --font-line-height-800: 32px; /* 72.727% */
+  --font-line-height-1000: 40px; /* 90.909% */
+  --font-line-height-1300: 52px; /* 118.182% */
+  --font-line-height-1800: 72px; /* 163.636% */
+  --font-line-height-2600: 104px; /* 236.364% */
+
+  //Letter spacing
+  --font-letter-spacing-default: 0px;
+  --font-letter-spacing-regular: 1.2px;
+
+  // Core font sizes
+  --font-size-300: 12px;
+  --font-size-350: 14px;
+  --font-size-400: 16px;
+  --font-size-450: 18px;
+  --font-size-500: 20px;
+  --font-size-550: 22px;
+  --font-size-600: 24px;
+  --font-size-800: 32px;
+  --font-size-1100: 44px;
+  --font-size-1600: 64px;
+  --font-size-2400: 96px;
+
+  //Company Main Brand Core colors
+  --color-brand-ow: #d34037;
+  --color-hover-brand-ow: #f05c48;
+  --color-brand-el: #9feaf9;
+  --color-brand-el-2: #69c5ea;
+
+  //Core Neutral colors
+  --color-neutral-0: #000000;
+  --color-neutral-8: #101010;
+  --color-neutral-16: #202020;
+  --color-neutral-24: #303030;
+  --color-neutral-32: #404040;
+  --color-neutral-40: #505050;
+  --color-neutral-48: #606060;
+  --color-neutral-80: #9f9f9f;
+  --color-neutral-88: #afafaf;
+  --color-neutral-96: #bfbfbf;
+  --color-neutral-104: #cfcfcf;
+  --color-neutral-112: #dfdfdf;
+  --color-neutral-120: #efefef;
+  --color-neutral-128: #ffffff;
+
+  // Core infographic colors for Overwolf
+
+  --color-infographic-ow-1: var(--color-brand-ow);
+  --color-infographic-ow-2: #942b27;
+  --color-infographic-ow-3: #ffd2d0;
+  --color-infographic-ow-4: #ffa4a1;
+  --color-infographic-ow-5: #ec7068;
+
+  // Surface colors
+  --color-surface-pure: var(--color-neutral-0);
+  --color-surface-primary: var(--color-neutral-8);
+  --color-surface-secondary: var(--color-neutral-16);
+  --color-surface-tertiary: var(--color-neutral-24);
+  --color-surface-quaternary: var(--color-neutral-48);
+  --color-surface-invert: var(--color-neutral-128);
+  --color-surface-brand-ow: var(--color-brand-ow);
+  --color-surface-brand-el: var(--color-brand-el);
+
+  // Text colors
+  --color-text-invert: var(--color-neutral-0);
+  --color-text-tertiary: var(--color-neutral-80);
+  --color-text-secondary: var(--color-neutral-96);
+  --color-text-primary: var(--color-neutral-112);
+  --color-text-pure: var(--color-neutral-128);
+  --color-text-cta-ow: var(--color-neutral-128);
+  --color-text-brand-ow: var(--color-brand-ow);
+  --color-text-hover-brand-ow: var(--color-hover-brand-ow);
+
+  // Icon colors
+  --color-icon-secondary: var(--color-neutral-80);
+  --color-icon-primary: var(--color-neutral-112);
+  --color-icon-pure: var(--color-neutral-128);
+  --color-icon-cta-ow-surface: var(--color-neutral-128);
+  --color-icon-brand-ow: var(--color-brand-ow);
+
+  // Border colors
+  --color-border-tertiary: var(--color-neutral-24);
+  --color-border-secondary: var(--color-neutral-48);
+  --color-border-primary: var(--color-neutral-96);
+
+  // Core Spaces
+  --space-0: 0px;
+  --space-50: 2px;
+  --space-100: 4px;
+  --space-200: 8px;
+  --space-300: 12px;
+  --space-400: 16px;
+  --space-500: 20px;
+  --space-600: 24px;
+  --space-800: 32px;
+  --space-1000: 40px;
+  --space-1200: 48px;
+  --space-1400: 56px;
+  --space-1600: 64px;
+  --space-1800: 72px;
+  --space-2000: 80px;
+  --space-2200: 88px;
+  --space-2400: 96px;
+  --space-2600: 104px;
+  --space-3200: 128px;
+  --space-4000: 160px;
+  --space-4800: 192px;
+  --space-5600: 224px;
+  --space-6400: 256px;
+}

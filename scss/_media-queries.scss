@@ -1,0 +1,17 @@
+// breakpoints
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+
+// media query mixins (mobile-first)
+@mixin respond-tablet {
+	@media (min-width: #{$breakpoint-tablet}) {
+			@content;
+	}
+}
+
+@mixin respond-desktop {
+	@media (min-width: #{$breakpoint-desktop}) {
+			@content;
+	}
+}
+

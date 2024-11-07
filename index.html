@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OW Landing Page</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swa p"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,400i,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header class="top-bar">
+      <div class="logo">
+        <svg width="156" height="50">
+          <use href="assets/icons.svg#ow-logo"></use>
+        </svg>
+      </div>
+      <div class="join">
+        <a
+          href="https://discord.com/invite/overwolf-developers"
+          target="_blank"
+        >
+          <button type="button" class="cta cta--secondary">Join</button>
+        </a>
+      </div>
+    </header>
+    <main>
+      <section class="hero" id="hero">
+        <div class="hero__info">
+          <h1>Enter the Guild of In-Game Creators</h1>
+          <h4>
+            We empower players, developers and creators to make the best games
+            even better through UGC
+          </h4>
+          <a
+            href="https://discord.com/invite/overwolf-developers"
+            target="_blank"
+          >
+            <button class="cta cta--main">join now</button>
+          </a>
+        </div>
+        <div class="hero__image"></div>
+      </section>
+      <div class="arrow-down">
+        <a href="#stats">
+          <svg width="24" height="24" class="page-navigation-arrow">
+            <use href="assets/icons.svg#arrow-down"></use>
+          </svg>
+        </a>
+      </div>
+      <section class="about should-animate-entrance" id="about">
+        <header>
+          <h2>About Overwolf</h2>
+        </header>
+        <ul class="about__items">
+          <li class="about__item">
+            <header class="about-icon">
+              <div
+                id="swords-animation"
+                class="about-icon__lottie-animation"
+              ></div>
+              <img
+                src="./assets/images/about/swords.png"
+                alt="Legendary Apps Icon"
+                class="about-icon__fallback-icon"
+              />
+            </header>
+            <h4>Legendary Apps</h4>
+            <h5>
+              Create powerful desktop apps and overlays for AAA games, using
+              basic HTML and Javascript
+            </h5>
+          </li>
+          <li class="about__item">
+            <header class="about-icon">
+              <div
+                id="anvil-animation"
+                class="about-icon__lottie-animation"
+              ></div>
+              <img
+                src="./assets/images/about/anvil.png"
+                alt="Legendary Mods Icon"
+                class="about-icon__fallback-icon"
+              />
+            </header>
+            <h4>Legendary Mods</h4>
+            <h5>
+              Create, manage and monetize mods for AAA games, exposing them to
+              millions of gamers
+            </h5>
+          </li>
+
+          <li class="about__item">
+            <header class="about-icon">
+              <div
+                id="server-animation"
+                class="about-icon__lottie-animation"
+              ></div>
+              <img
+                src="./assets/images/about/server.png"
+                alt="Legendary Servers Icon"
+                class="about-icon__fallback-icon"
+              />
+            </header>
+            <h4>Legendary Servers</h4>
+            <h5>
+              Create in-game stores, sell goods to your gamers and grow your
+              player base through our tools & server list
+            </h5>
+          </li>
+
+          <li class="about__item">
+            <header class="about-icon">
+              <div
+                id="megaphone-animation"
+                class="about-icon__lottie-animation"
+              ></div>
+              <img
+                src="./assets/images/about/megaphone.png"
+                alt="Legendary Ads Icon"
+                class="about-icon__fallback-icon"
+              />
+            </header>
+            <h4>Legendary Ads</h4>
+            <h5>
+              Supercharge your website with ads, and get faster payments,
+              customer service, and ad load time
+            </h5>
+          </li>
+
+          <li class="about__item">
+            <header class="about-icon">
+              <div
+                id="crystals-animation"
+                class="about-icon__lottie-animation"
+              ></div>
+              <img
+                src="./assets/images/about/crystals.png"
+                alt="Legendary Funds Icon"
+                class="about-icon__fallback-icon"
+              />
+            </header>
+            <h4>Legendary Funds</h4>
+            <h5>
+              Overwolf’s creator fund is a $50M fund dedicated to supporting
+              game studios, developers and creators
+            </h5>
+          </li>
+        </ul>
+      </section>
+
+      <section class="stats should-animate-entrance" id="stats">
+        <ul class="stats__list">
+          <li class="stat">
+            <p class="stat__title">
+              <span
+                id="downloads-count"
+                class="count stat__count"
+                data-target="15"
+                >0</span
+              ><span class="suffix">B</span>
+            </p>
+            <p class="stat__label">YEARLY DOWNLOADS</p>
+          </li>
+          <li class="stat">
+            <p class="stat__title">
+              <span
+                id="gamers-count"
+                class="count stat__count"
+                data-target="100"
+                >0</span
+              ><span class="suffix">M</span>
+            </p>
+            <p class="stat__label">MONTHLY ACTIVE GAMERS</p>
+          </li>
+          <li class="stat">
+            <p class="stat__title">
+              <span
+                id="creators-count"
+                class="count stat__count"
+                data-target="178"
+                >0</span
+              ><span class="suffix">K</span>
+            </p>
+            <p class="stat__label">IN-GAME CREATORS</p>
+          </li>
+          <li class="stat">
+            <p class="stat__title">
+              <span
+                id="games-count"
+                class="count stat__count"
+                data-target="1500"
+                >0</span
+              ><span class="suffix">+</span>
+            </p>
+            <p class="stat__label">GAMES SUPPORTED</p>
+          </li>
+        </ul>
+      </section>
+      <section class="video should-animate-entrance">
+        <div class="video__container">
+          <iframe
+            src="https://www.youtube.com/embed/1uFGfVk-Jds"
+            class="video__iframe"
+            id="youtube-video"
+            title="Overwolf"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </section>
+      <section class="full-suite should-animate-entrance">
+        <header class="full-suite__header">
+          <h2>Full Suite for App Creation Success</h2>
+        </header>
+        <ul class="full-suite__list">
+          <li class="full-suite__item">
+            <header>
+              <svg width="40" height="40">
+                <use href="assets/icons.svg#tools"></use>
+              </svg>
+            </header>
+            <h3>Developer SDK</h3>
+            <h4>
+              Integrate various features such as overlays and real-time alerts
+            </h4>
+          </li>
+          <li class="full-suite__item">
+            <header>
+              <svg width="41" height="40">
+                <use href="assets/icons.svg#games"></use>
+              </svg>
+            </header>
+            <h3>Game Event API</h3>
+            <h4>Create apps that respond to in-game actions & events</h4>
+          </li>
+          <li class="full-suite__item">
+            <header>
+              <svg width="41" height="40">
+                <use href="assets/icons.svg#profit"></use>
+              </svg>
+            </header>
+            <h3>Monetization Tools</h3>
+            <h4>Turn your app into revenue through ads & subscriptions</h4>
+          </li>
+        </ul>
+      </section>
+      <section class="success-stories should-animate-entrance">
+        <header class="success-stories__header">
+          <h2>Success Stories</h2>
+        </header>
+        <div class="swiper-container swiper-container--full-width">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <img
+                src="./assets/images/success-stories-slider/desktop/slide-1.png"
+                class="desktop-image"
+                alt="RuneMaster"
+              />
+              <img
+                src="./assets/images/success-stories-slider/mobile/slide-1-mobile.png"
+                class="mobile-image"
+                alt="RuneMaster"
+              />
+              <div class="slide-content">
+                <div class="slide-content__title">
+                  <img
+                    src="./assets/images/success-stories-slider/thumbnails-icon/slide-1-icon.png"
+                    class="thumbnail-icon"
+                    alt="RuneMaster Icon"
+                  />
+                  <h3>RuneMaster</h3>
+                </div>
+                <p>
+                  RuneMaster predicts your opponent’s rune choices based on
+                  historical patterns...
+                </p>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <img
+                src="./assets/images/success-stories-slider/desktop/slide-2.png"
+                class="desktop-image"
+                alt="ChampionSync"
+              />
+              <img
+                src="./assets/images/success-stories-slider/mobile/slide-2-mobile.png"
+                class="mobile-image"
+                alt="ChampionSync"
+              />
+              <div class="slide-content">
+                <div class="slide-content__title">
+                  <img
+                    src="./assets/images/success-stories-slider/thumbnails-icon/slide-2-icon.png"
+                    class="thumbnail-icon"
+                    alt="ChampionSync Icon"
+                  />
+                  <h3>ChampionSync</h3>
+                </div>
+                <p>
+                  ChampionSync analyzes your past matches and suggests champions
+                  that perfectly sync with your playstyle...
+                </p>
+              </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <img
+                src="./assets/images/success-stories-slider/desktop/slide-3.png"
+                class="desktop-image"
+                alt="Pathfinder"
+              />
+              <img
+                src="./assets/images/success-stories-slider/mobile/slide-3-mobile.png"
+                class="mobile-image"
+                alt="Pathfinder"
+              />
+              <div class="slide-content">
+                <div class="slide-content__title">
+                  <img
+                    src="./assets/images/success-stories-slider/thumbnails-icon/slide-3-icon.png"
+                    class="thumbnail-icon"
+                    alt="Pathfinder Icon"
+                  />
+                  <h3>Pathfinder</h3>
+                </div>
+                <p>
+                  Pathfinder tracks enemy junglers in real-time by analyzing
+                  patterns and predicting ganks...
+                </p>
+              </div>
+            </div>
+            <!-- Slide 4 -->
+            <div class="swiper-slide">
+              <img
+                src="./assets/images/success-stories-slider/desktop/slide-4.png"
+                class="desktop-image"
+                alt="Pathfinder"
+              />
+              <img
+                src="./assets/images/success-stories-slider/mobile/slide-4-mobile.png"
+                class="mobile-image"
+                alt="Pathfinder"
+              />
+              <div class="slide-content">
+                <div class="slide-content__title">
+                  <img
+                    src="./assets/images/success-stories-slider/thumbnails-icon/slide-4-icon.png"
+                    class="thumbnail-icon"
+                    alt="Pathfinder Icon"
+                  />
+                  <h3>SkillCurve</h3>
+                </div>
+                <p>
+                  SkillCurve helps you master difficult champions by adapting
+                  in-game tutorials to your performance. It tracks your progress
+                  and adjusts its tips in real-time, making sure you're always
+                  improving your mechanics on the fly.
+                </p>
+              </div>
+            </div>
+            <!-- Slide 5 -->
+            <div class="swiper-slide">
+              <img
+                src="./assets/images/success-stories-slider/desktop/slide-5.png"
+                class="desktop-image"
+                alt="Pathfinder"
+              />
+              <img
+                src="./assets/images/success-stories-slider/mobile/slide-5-mobile.png"
+                class="mobile-image"
+                alt="Pathfinder"
+              />
+              <div class="slide-content">
+                <div class="slide-content__title">
+                  <img
+                    src="./assets/images/success-stories-slider/thumbnails-icon/slide-5-icon.png"
+                    class="thumbnail-icon"
+                    alt="Pathfinder Icon"
+                  />
+                  <h3>Ult-Timer</h3>
+                </div>
+                <p>
+                  Ult-Timer tracks ultimate abilities for all champions on both
+                  teams, giving you an edge by alerting you when an enemy’s
+                  ultimate is ready or on cooldown, helping you plan fights more
+                  effectively.
+                </p>
+              </div>
+            </div>
+            <!-- Slide 6 -->
+            <div class="swiper-slide">
+              <img
+                src="./assets/images/success-stories-slider/desktop/slide-6.png"
+                class="desktop-image"
+                alt="Pathfinder"
+              />
+              <img
+                src="./assets/images/success-stories-slider/mobile/slide-6-mobile.png"
+                class="mobile-image"
+                alt="Pathfinder"
+              />
+              <div class="slide-content">
+                <div class="slide-content__title">
+                  <img
+                    src="./assets/images/success-stories-slider/thumbnails-icon/slide-6-icon.png"
+                    class="thumbnail-icon"
+                    alt="Pathfinder Icon"
+                  />
+                  <h3>ClutchCoach</h3>
+                </div>
+                <p>
+                  ClutchCoach is a performance-enhancing app that analyzes
+                  high-pressure moments like team fights or baron steals. It
+                  gives you real-time advice on how to handle critical
+                  situations and boost your chances of pulling off game-changing
+                  plays.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- slider buttons -->
+          <div class="swiper-button-prev">
+            <svg class="icon">
+              <use href="assets/icons.svg#left-arrow"></use>
+            </svg>
+          </div>
+          <div class="swiper-button-next">
+            <svg class="icon">
+              <use href="assets/icons.svg#right-arrow"></use>
+            </svg>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="back-to-top">
+        <div class="back-to-top__arrow">
+          <a href="#hero">
+            <svg
+              width="24"
+              height="24"
+              class="back-to-top__icon page-navigation-arrow"
+            >
+              <use href="assets/icons.svg#arrow-up"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="back-to-top__text">back to top</div>
+      </div>
+      <div class="footer__logo">
+        <svg width="156" height="50">
+          <use href="assets/icons.svg#ow-logo"></use>
+        </svg>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.4/lottie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/1.9.3/countUp.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
