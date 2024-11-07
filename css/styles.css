@@ -126,10 +126,10 @@ section {
   margin-inline: auto;
   padding-inline: var(--space-500);
   padding-bottom: var(--space-1200);
-  overflow: hidden;
 }
 section:not(.hero) {
   padding-top: var(--space-1200);
+  overflow: hidden;
 }
 @media (min-width: 1024px) {
   section:not(.hero) {

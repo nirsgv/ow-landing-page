@@ -19,11 +19,11 @@ section {
   margin-inline: auto;
   padding-inline: var(--space-500);
   padding-bottom: var(--space-1200);
-  overflow: hidden;
 
   &:not(.hero) {
     padding-top: var(--space-1200);
-
+    overflow: hidden;
+  
     @include media-queries.respond-desktop {
       padding-top: var(--space-2400);
     }
