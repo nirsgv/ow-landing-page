@@ -275,23 +275,23 @@
   &__header {
     line-height: var(--font-line-height-1000);
   }
+
   &__list {
     display: grid;
     grid-template-columns: 1fr;
-    column-gap: var(--space-600);
+    grid-gap: var(--space-600);
 
     @include media-queries.respond-tablet {
       grid-template-columns: repeat(3, 1fr);
-      gap: var(--space-600);
-      column-gap: 0;
     }
   }
+
   &__item {
     background-color: var(--color-surface-primary);
     line-height: var(--font-line-height-600);
     padding-inline: var(--space-600);
     @include helpers.padding-vertical(var(--space-1200));
-
+    
     @include media-queries.respond-desktop {
       padding-inline: var(--space-1200);
     }

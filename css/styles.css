@@ -190,7 +190,7 @@ h2 {
 }
 @media (min-width: 1024px) {
   h2 {
-    font-size: var(--font-size-1600);
+    font-size: var(--font-size-1100);
   }
 }
 
@@ -662,13 +662,11 @@ a:hover .page-navigation-arrow {
 .full-suite__list {
   display: grid;
   grid-template-columns: 1fr;
-  column-gap: var(--space-600);
+  grid-gap: var(--space-600);
 }
 @media (min-width: 768px) {
   .full-suite__list {
     grid-template-columns: repeat(3, 1fr);
-    gap: var(--space-600);
-    column-gap: 0;
   }
 }
 .full-suite__item {
