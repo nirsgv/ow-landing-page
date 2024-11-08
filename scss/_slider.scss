@@ -6,6 +6,10 @@
   padding: var(--space-500) 0;
   color: var(--color-text-pure);
   text-align: center;
+  padding-bottom: 0;
+  @include media-queries.respond-desktop {
+    // padding-bottom: unset;
+  }
 }
 
 .section-title {
@@ -140,6 +144,7 @@ div.swiper-container {
   bottom: 0 !important;
   top: unset !important;
   z-index: 5;
+  margin: 0!important;
 
   @include media-queries.respond-desktop {
     bottom: unset !important;

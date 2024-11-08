@@ -102,7 +102,25 @@
     h4 {
       margin-bottom: var(--space-600);
     }
+    h4 {
+      color: var(--color-text-primary);
+      line-height: var(--font-line-height-500);
+      @include media-queries.respond-desktop {
+        line-height: var(--font-line-height-800);
+      }
+    }
   }
+
+  &__link {
+    margin-bottom: var(--space-600);
+    display: inline-block;
+    width: 100%;
+    
+    @include media-queries.respond-desktop {
+      margin-bottom: 0;
+    }
+  }
+
   &__image {
     flex-basis: 55%;
     background-image: url("../assets/images/hero-bg-mobile.png");
@@ -147,6 +165,7 @@
     @include helpers.padding-vertical(var(--space-1200));
 
     @include media-queries.respond-tablet {
+      padding-inline: var(--space-1200);
       @include helpers.padding-vertical(var(--space-2400));
 
       &:nth-child(1) {
@@ -172,20 +191,20 @@
 
     h4 {
       font-size: var(--font-size-600);
-      margin: 10px 0;
+      margin-bottom: var(--space-600);
       font-weight: bold;
     }
 
     h5 {
       font-size: var(--font-size-400);
       font-weight: normal;
-      color: var(--color-text-pure);
+      color: var(--color-text-primary);
       line-height: var(--font-line-height-700);
     }
   }
   &-icon {
     height: var(--space-2000);
-    margin-bottom: var(--space-500);
+    margin-bottom: var(--space-600);
 
     &__lottie-animation {
       width: 100%;
@@ -291,7 +310,7 @@
     line-height: var(--font-line-height-600);
     padding-inline: var(--space-600);
     @include helpers.padding-vertical(var(--space-1200));
-    
+
     @include media-queries.respond-desktop {
       padding-inline: var(--space-1200);
     }
