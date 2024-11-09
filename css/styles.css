@@ -428,6 +428,16 @@ a:hover .page-navigation-arrow {
   background-color: rgba(0, 0, 0, 0.85);
   z-index: 10;
 }
+.top-bar__logo svg {
+  width: 124px;
+  height: 40px;
+}
+@media (min-width: 768px) {
+  .top-bar__logo svg {
+    width: 155px;
+    height: 50px;
+  }
+}
 @media (min-width: 1024px) {
   .top-bar {
     padding-left: var(--space-400);
@@ -463,8 +473,9 @@ a:hover .page-navigation-arrow {
   height: var(--space-1000);
   background: transparent;
   line-height: var(--font-line-height-600);
-  border: 1px solid var(--color-neutral-112);
+  border: 1px solid var(--color-text-primary);
   width: fit-content;
+  color: var(--color-text-primary);
 }
 .cta--secondary:hover {
   background: var(--color-hover-brand-ow);
@@ -479,8 +490,14 @@ a:hover .page-navigation-arrow {
 }
 .arrow-down > a {
   display: block;
-  padding: var(--space-600) 0 var(--space-1200) 0;
   height: 100%;
+  padding: var(--space-600) 0 var(--space-1200) 0;
+}
+@media (min-width: 1024px) {
+  .arrow-down > a {
+    padding: 0;
+    margin-top: -24px;
+  }
 }
 .arrow-down svg {
   margin-inline: auto;
@@ -492,22 +509,35 @@ a:hover .page-navigation-arrow {
   text-align: center;
   font-family: var(--font-family-brand);
   padding-bottom: 0;
+  max-width: unset;
 }
 @media (min-width: 1024px) {
   .hero {
     display: flex;
     text-align: left;
+    background-image: url(../assets/images/hero-bg.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: contain;
   }
 }
 .hero__info {
-  flex-basis: 45%;
   padding-top: var(--space-1200);
   text-wrap: balance;
-  padding-inline: var(--space-500);
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .hero__info {
+    max-width: 700px;
+  }
 }
 @media (min-width: 1024px) {
   .hero__info {
-    padding-top: var(--space-2000);
+    width: unset;
+    max-width: 1396px;
+    padding-top: var(--space-4800);
+    height: 900px;
+    padding-right: 600px;
   }
 }
 .hero__info h1,
@@ -516,7 +546,6 @@ a:hover .page-navigation-arrow {
 }
 .hero__info h4 {
   color: var(--color-text-primary);
-  line-height: var(--font-line-height-500);
 }
 @media (min-width: 1024px) {
   .hero__info h4 {
@@ -533,22 +562,29 @@ a:hover .page-navigation-arrow {
   }
 }
 .hero__image {
-  flex-basis: 55%;
   background-image: url("../assets/images/hero-bg-mobile.png");
   background-size: contain;
   background-position: top;
   background-repeat: no-repeat;
   transform-origin: top;
-  transform: scale(1.1);
   width: 100%;
-  aspect-ratio: 1/1; /* 1:1 ratio for a square */
-  object-fit: cover; /* Ensures the image fills the area */
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  width: calc(100% + 40px);
+  margin-left: -20px;
+}
+@media (min-width: 768px) {
+  .hero__image {
+    width: unset;
+    margin-left: unset;
+  }
 }
 @media (min-width: 1024px) {
   .hero__image {
     background-image: url("../assets/images/hero-bg.png");
     min-height: 590px;
-    transform-origin: left;
+    transform: unset;
+    display: none;
   }
 }
 
