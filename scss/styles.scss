@@ -30,9 +30,12 @@
   justify-content: space-between;
   align-items: center;
   height: var(--space-2000);
-  padding: 0 var(--space-500) 0 var(--space-400);
+  padding: var(--space-500);
   background-color: rgba(0, 0, 0, 0.85);
   z-index: 10;
+  @include media-queries.respond-desktop {
+    padding-left: var(--space-400);
+  }
 }
 
 .cta {
@@ -49,9 +52,12 @@
     letter-spacing: var(--font-letter-spacing-regular);
     height: var(--space-1200);
     width: 100%;
+    padding: var(--space-400) var(--space-800);
+    margin-bottom: var(--space-600);
     @include media-queries.respond-tablet {
       width: auto;
     }
+
     &:hover {
       background-color: var(--color-hover-brand-ow);
     }
@@ -73,6 +79,15 @@
 
 .arrow-down {
   width: 100%;
+  position: relative;
+  z-index: 15;
+
+  & > a {
+    display: block;
+    padding: var(--space-600) 0  var(--space-1200) 0;
+    height: 100%;
+  }
+
   svg {
     margin-inline: auto;
     display: block;
@@ -84,6 +99,7 @@
   color: var(--color-text-pure);
   text-align: center;
   font-family: var(--font-family-brand);
+  padding-bottom: 0;
 
   @include media-queries.respond-desktop {
     display: flex;
@@ -94,7 +110,8 @@
     flex-basis: 45%;
     padding-top: var(--space-1200);
     text-wrap: balance;
-
+    padding-inline: var(--space-500);
+    
     @include media-queries.respond-desktop {
       padding-top: var(--space-2000);
     }
@@ -112,7 +129,6 @@
   }
 
   &__link {
-    margin-bottom: var(--space-600);
     display: inline-block;
     width: 100%;
     
@@ -127,12 +143,17 @@
     background-size: contain;
     background-position: top;
     background-repeat: no-repeat;
-    min-height: 364px;
+    transform-origin: top;
+    transform: scale(1.1);
+
+    width: 100%;
+    aspect-ratio: 1 / 1; /* 1:1 ratio for a square */
+    object-fit: cover;    /* Ensures the image fills the area */
+  
 
     @include media-queries.respond-desktop {
       background-image: url("../assets/images/hero-bg.png");
       min-height: 590px;
-      transform: scale(1.1);
       transform-origin: left;
     }
   }

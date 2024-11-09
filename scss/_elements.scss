@@ -37,6 +37,7 @@ section {
   &.success-stories {
     @include media-queries.respond-desktop {
       max-width: unset;
+      padding-bottom: var(--space-4000);
     }
   }
 

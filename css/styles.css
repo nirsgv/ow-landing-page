@@ -145,6 +145,7 @@ section:not(.hero) {
 @media (min-width: 1024px) {
   section.success-stories {
     max-width: unset;
+    padding-bottom: var(--space-4000);
   }
 }
 section > header {
@@ -423,9 +424,14 @@ a:hover .page-navigation-arrow {
   justify-content: space-between;
   align-items: center;
   height: var(--space-2000);
-  padding: 0 var(--space-500) 0 var(--space-400);
+  padding: var(--space-500);
   background-color: rgba(0, 0, 0, 0.85);
   z-index: 10;
+}
+@media (min-width: 1024px) {
+  .top-bar {
+    padding-left: var(--space-400);
+  }
 }
 
 .cta {
@@ -442,6 +448,8 @@ a:hover .page-navigation-arrow {
   letter-spacing: var(--font-letter-spacing-regular);
   height: var(--space-1200);
   width: 100%;
+  padding: var(--space-400) var(--space-800);
+  margin-bottom: var(--space-600);
 }
 @media (min-width: 768px) {
   .cta--main {
@@ -466,6 +474,13 @@ a:hover .page-navigation-arrow {
 
 .arrow-down {
   width: 100%;
+  position: relative;
+  z-index: 15;
+}
+.arrow-down > a {
+  display: block;
+  padding: var(--space-600) 0 var(--space-1200) 0;
+  height: 100%;
 }
 .arrow-down svg {
   margin-inline: auto;
@@ -476,6 +491,7 @@ a:hover .page-navigation-arrow {
   color: var(--color-text-pure);
   text-align: center;
   font-family: var(--font-family-brand);
+  padding-bottom: 0;
 }
 @media (min-width: 1024px) {
   .hero {
@@ -487,6 +503,7 @@ a:hover .page-navigation-arrow {
   flex-basis: 45%;
   padding-top: var(--space-1200);
   text-wrap: balance;
+  padding-inline: var(--space-500);
 }
 @media (min-width: 1024px) {
   .hero__info {
@@ -507,7 +524,6 @@ a:hover .page-navigation-arrow {
   }
 }
 .hero__link {
-  margin-bottom: var(--space-600);
   display: inline-block;
   width: 100%;
 }
@@ -522,13 +538,16 @@ a:hover .page-navigation-arrow {
   background-size: contain;
   background-position: top;
   background-repeat: no-repeat;
-  min-height: 364px;
+  transform-origin: top;
+  transform: scale(1.1);
+  width: 100%;
+  aspect-ratio: 1/1; /* 1:1 ratio for a square */
+  object-fit: cover; /* Ensures the image fills the area */
 }
 @media (min-width: 1024px) {
   .hero__image {
     background-image: url("../assets/images/hero-bg.png");
     min-height: 590px;
-    transform: scale(1.1);
     transform-origin: left;
   }
 }
